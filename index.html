@@ -6,20 +6,25 @@
     <title>Dom Manupulation</title>
 </head>
 <body>
-    <div class ="title">
-        <p >learning Dom Manipulation 1</p>
-        <p class="second ">learning Dom Manipulation 2</p>
-        <p >learning Dom Manipulation 3</p>
 
-    </div>
-
-
+    <ul id="menu">
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Blog</li>
+    </ul>
+   
     <script>
-    //    let text = document.querySelector(".text");
-    //    console.log(text.parentNode);
-    let second = document.querySelector(".second ");
-    // console.log(parent.lastElementChild);
-    console.log(second.nextElementSibling);
+    //   let div = document.createElement('div');
+    //   div.innerHTML ="<p>Hello World</p>";
+    // document.body.appendChild(div);
+    // div.className = "myDiv";
+    //   console.log(div);
+
+    let menu = document.getElementById("menu");
+    let list = document.createElement("li");
+    list.innerHTML = "Services";
+    menu.appendChild(list);
     </script>
 </body>
 </html>
