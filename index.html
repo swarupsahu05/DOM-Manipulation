@@ -11,7 +11,7 @@
         <li>Home</li>
         <li>About</li>
         <li>Contact</li>
-        <li>Blog</li>
+        <li style="display: none;">Blog</li>
     </ul>
    
     <script>
@@ -22,9 +22,17 @@
     //   console.log(div);
 
     let menu = document.getElementById("menu");
-    let list = document.createElement("li");
-    list.innerHTML = "Services";
-    menu.appendChild(list);
+    // let list = document.createElement("li");
+    // list.innerHTML = "Services";
+    // menu.appendChild(list);
+    // console.log(menu.textContent);
+    // menu.innerHTML = "<h1>Hello World</h1>";
+
+    // menu .after(node1, node2, ...nodeN);
+    // menu.removeChild(menu.lastElementChild);
+    menu.insertBefore(document.createElement("li"), menu.firstElementChild);
+
+
     </script>
 </body>
 </html>
