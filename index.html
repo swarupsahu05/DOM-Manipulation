@@ -6,33 +6,21 @@
     <title>Dom Manupulation</title>
 </head>
 <body>
+ <!-- <h1 id="title" class="main">Dom Manipulation</h1> -->
+  <div id="container">
+    <button type="button" onclick="displayMsg()">Click Me</button>
 
-    <ul id="menu">
-        <li>Home</li>
-        <li>About</li>
-        <li>Contact</li>
-        <li style="display: none;">Blog</li>
-    </ul>
-   
-    <script>
-    //   let div = document.createElement('div');
-    //   div.innerHTML ="<p>Hello World</p>";
-    // document.body.appendChild(div);
-    // div.className = "myDiv";
-    //   console.log(div);
+  </div>
 
-    let menu = document.getElementById("menu");
-    // let list = document.createElement("li");
-    // list.innerHTML = "Services";
-    // menu.appendChild(list);
-    // console.log(menu.textContent);
-    // menu.innerHTML = "<h1>Hello World</h1>";
+ <script>
+    // let title = document.getElementById("title");
+    // title.style.color = "red";
+    // console.log(title);
+    // title.className = "heading";
 
-    // menu .after(node1, node2, ...nodeN);
-    // menu.removeChild(menu.lastElementChild);
-    menu.insertBefore(document.createElement("li"), menu.firstElementChild);
-
-
-    </script>
+    function displayMsg(){
+        console.log("button clicked from FN");
+    }
+ </script>
 </body>
 </html>
